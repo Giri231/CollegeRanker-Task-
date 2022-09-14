@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     string s;
+   // int n;
+   // cout<<"Enter the length of string ";
+   // cin>>n;
+   // char s[n];
+   getline(cin,s);
+    int n =s.length();
+   // cout<<n;
+    int ans=0;
+     char a;
+    for(int i =0;i<n;i++){
+        int max=1;
+      
+    for(int j=i+1;j<n;j++ ){
+        if(s[i]==s[j]){
+            max+=1;
+        }
+        if(ans<=max){
+            ans=max;
+           a=s[i]; 
+        }
+    }
+    }
+cout<<"the number which repeated maximum"<<"  "<<a<<" times"<<ans;
+    return 0;
+}
