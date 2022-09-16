@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    string s;
+    getline(cin,s);
+   int  n=s.length();
+    
+        if(isxdigit(s))
+        {
+            cout<<"The entered character is a hexadecimal digit";
+        }
+        else
+        {
+            cout<<"The entered character is  not a hexadecimal digit";
+        }
+    
+    return 0;
+}
